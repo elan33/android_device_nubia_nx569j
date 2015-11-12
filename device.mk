@@ -21,7 +21,6 @@ PRODUCT_AAPT_CONFIG := normal
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-cerberusos
 
 # ANT+
 PRODUCT_PACKAGES += \
