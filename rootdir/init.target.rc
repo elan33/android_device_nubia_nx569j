@@ -159,7 +159,6 @@ on boot
     chown system drmrpc /sys/devices/soc.0/78b8000.i2c/i2c-4/4-0020/input/input0/secure_touch
     write /proc/sys/kernel/sched_boost 1
 
-<<<<<<< HEAD
     ####Regionalization config and prop files####
     chmod 0644 /persist/speccfg/spec
     chmod 0644 /persist/speccfg/devicetype
@@ -179,11 +178,7 @@ on boot
     chown system system /persist/speccfg/partition
 
 service wcnss-service /system/bin/wcnss_service
-    class main
-=======
-service wcnss-service /vendor/bin/wcnss_service
     class late_start
->>>>>>> 5e5ce4e... msm8953-common: move wcnss-service to late_start
     user system
     group system wifi radio
     oneshot
